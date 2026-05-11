@@ -5,7 +5,7 @@
 
 ## 📌 Problem
 Attackers perform network reconnaissance before 
-launching attacks — scanning for open ports to 
+launching attacks, which means scanning for open ports to 
 find vulnerable services. This project captures 
 and analyzes real port scan traffic using Wireshark 
 to identify reconnaissance activity.
@@ -37,6 +37,8 @@ to identify reconnaissance activity.
 Before attacking a system, attackers scan it to 
 find open ports — services that are actively 
 listening for connections.
+### SYN Scan (-sS) Explained
+Nmap's SYN scan is a stealthy reconnaissance technique:
 Step 1: Attacker → Target   SYN      "Is this port open?"
 Step 2: Target   → Attacker SYN-ACK  "Yes, I'm open!"
 Step 3: Attacker → Target   RST      "Thanks, goodbye"
@@ -211,7 +213,3 @@ statistics.
 ## 👤 Author
 Fredrick Agufenwa
 Cybersecurity Student | SOC & Threat Detection
-#50DaysOfCybersecurity
-
-### SYN Scan (-sS) Explained
-Nmap's SYN scan is a stealthy reconnaissance technique:
