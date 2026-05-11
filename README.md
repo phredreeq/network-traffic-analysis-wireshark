@@ -35,7 +35,7 @@ to identify reconnaissance activity.
 
 ### What is a Port Scan?
 Before attacking a system, attackers scan it to 
-find open ports — services that are actively 
+find open ports. Open ports are services that are actively 
 listening for connections.
 ### SYN Scan (-sS) Explained
 Nmap's SYN scan is a stealthy reconnaissance technique:
@@ -162,8 +162,7 @@ stealthy reconnaissance technique that avoids
 completing the full TCP handshake.
 
 ### Finding 4 — Protocol Anomaly
-Protocol hierarchy showed 99.9% TCP traffic — 
-a clear anomaly. Normal network traffic has a 
+Protocol hierarchy showed 99.9% TCP traffic, this indicates a clear anomaly. Normal network traffic has a 
 balanced mix of protocols. This extreme TCP 
 dominance is a strong indicator of port scanning.
 
