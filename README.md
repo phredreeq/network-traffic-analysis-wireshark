@@ -39,10 +39,14 @@ find open ports — services that are actively
 listening for connections.
 ### SYN Scan (-sS) Explained
 Nmap's SYN scan is a stealthy reconnaissance technique:
+
 Step 1: Attacker → Target   SYN      "Is this port open?"
+
 Step 2: Target   → Attacker SYN-ACK  "Yes, I'm open!"
+
 Step 3: Attacker → Target   RST      "Thanks, goodbye"
-The connection is never fully established — making 
+
+The connection is never fully established, thereby making 
 it faster and harder to detect than a full connect scan.
 
 ---
