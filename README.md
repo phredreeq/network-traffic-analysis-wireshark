@@ -1,9 +1,9 @@
-# 🌐 Network Traffic Analysis Using Wireshark
+# Network Traffic Analysis Using Wireshark
 ## Port Scan Detection and Network Reconnaissance Analysis
 
 ---
 
-## 📌 Problem
+## Problem
 Attackers perform network reconnaissance before 
 launching attacks, which means scanning for open ports to 
 find vulnerable services. This project captures 
@@ -12,7 +12,7 @@ to identify reconnaissance activity.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Generate real port scan traffic using Nmap
 - Capture live network traffic using Wireshark
 - Apply display filters to isolate scan patterns
@@ -21,7 +21,7 @@ to identify reconnaissance activity.
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 | Tool | Purpose |
 |---|---|
 | **Wireshark** | Network packet capture and analysis |
@@ -31,7 +31,7 @@ to identify reconnaissance activity.
 
 ---
 
-## 🧠 Attack Background
+## Attack Background
 
 ### What is a Port Scan?
 Before attacking a system, attackers scan it to 
@@ -51,7 +51,7 @@ it faster and harder to detect than a full connect scan.
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### Step 1 — Start Wireshark Capture
 Started capturing on eth0 interface to record 
@@ -72,7 +72,7 @@ suspicious traffic imbalances.
 
 ---
 
-## 🔎 Wireshark Filters Used
+## Wireshark Filters Used
 
 ### Filter 1 — Isolate SYN Packets (The Scan)
 tcp.flags.syn == 1 and tcp.flags.ack == 0
@@ -93,7 +93,7 @@ Shows all traffic between scanner and target.
 
 ---
 
-## 📸 Results
+## Results
 
 ### Nmap Scan Results + Wireshark Capture
 
@@ -139,7 +139,7 @@ Shows all traffic between scanner and target.
 
 ---
 
-## 🧠 Analysis
+## Analysis
 
 ### Finding 1 — Port Scan Confirmed
 2002 SYN packets were sent from 192.168.10.102 
@@ -185,7 +185,7 @@ After discovering open ports an attacker would:
 
 ---
 
-## ✅ Conclusion & Recommendations
+## Conclusion & Recommendations
 
 ### What Was Detected
 A full SYN port scan was performed against the 
